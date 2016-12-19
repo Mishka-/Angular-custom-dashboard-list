@@ -1,0 +1,87 @@
+
+dashboard{
+    margin: 0;
+    width:100%;
+}
+
+.gridster .gridster-item{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    background: white;
+    border-radius: 5px;
+}
+
+.widget-header{
+    position: relative;
+    color: white;
+    background-color: #444;
+    font-size:18px;
+    border-bottom: 1px solid black;
+    min-height:30px;
+    padding:8px;
+    padding-top:4px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+
+.widget-header-buttons{
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.widget-header-buttons .btn{
+    margin: 4px;
+    margin-top:3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.dashboard-header{
+    font-size:20px;
+    border-bottom:1px solid #444;
+    color:white;
+    background-color: #777;
+    margin:-20px;
+    margin-bottom:20px;
+    min-height:50px;
+    padding: 8px;
+    padding-left: 20px;
+}
+
+.dashboard-controls{
+    float:right;
+}
+
+.widget-menu-area {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-size: 22px;
+}
+
+.widget-menu-area .dropdown-menu {
+    left: -20px;
+    padding-left: 15px;
+    width:20px;
+}
+
+.widget-menu-area a {
+    color: black;
+}
+
+.widget-menu-area i {
+    cursor: pointer;
+}
+li.ng-scope.gridster-item{
+    overflow: hidden;
+}
+
+.close-btn{
+    float:right;
+}
+.to-do-input{
+    width:60%;
+    margin:3%;
+}
+.add-btn{
+    margin: 3%;
+}

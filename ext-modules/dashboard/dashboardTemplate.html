@@ -1,0 +1,30 @@
+<div class="dashboard-header">
+    {{ title }}
+
+    <div class="dashboard-controls">
+        <div class="dropdown" >
+            <button class="btn btn-default dropdown-toggle" type="button" id="drpdownMenu"
+                    data-toggle="dropdown" aria-expanded="true">
+                <i class="fa fa-plus"></i>
+                Add Widget
+                <!--<span class="caret"></span>-->
+            </button>
+           <ul class="dropdown-menu" role="menu" aria-labelledby="drpdownMenu">
+                <li ng-repeat="widget in widgetDefinitions">
+                    <a role="menuitem" ng-click="addNewWidget(widget)">{{widget.title}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+<div gridster="gridsterOpts">
+    <ul>
+        <li gridster-item="item" ng-repeat="item in widgets">
+            <widget-body>
+            </widget-body>
+        </li>
+    </ul>
+</div>

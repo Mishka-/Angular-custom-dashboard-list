@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Dashboard</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="node_modules/angular/angular-gridster.min.css" rel="stylesheet"/>
+    <link href="app/app.css" rel="stylesheet"/>
+    <link href="ext-modules/framework/framework.css" rel="stylesheet"/>
+    <link href="ext-modules/dashboard/dashboard.css" rel="stylesheet"/>
+    <link href="ext-modules/menu/menu.css" rel="stylesheet"/>
+    <link href="node_modules/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/angular/angular-gridster.min.js"></script>
+    <script src="node_modules/ngStorage.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="ext-modules/menu/menuModule.js"></script>
+    <script src="ext-modules/menu/menuController.js"></script>
+    <script src="ext-modules/menu/menuDirective.js"></script>
+    <script src="ext-modules/menu/menuItemDirective.js"></script>
+    <script src="ext-modules/menu/menuGroupDirective.js"></script>
+
+    <script src="ext-modules/dashboard/dashboardModule.js"></script>
+    <script src="ext-modules/dashboard/dashboardDirective.js"></script>
+    <script src="ext-modules/dashboard/widgetModule.js"></script>
+    <script src="ext-modules/dashboard/widgetBodyDirective.js"></script>
+
+
+    <script src="ext-modules/framework/frameworkModule.js"></script>
+    <script src="ext-modules/framework/frameworkController.js"></script>
+    <script src="ext-modules/framework/frameworkDirective.js"></script>
+
+
+    <script src="app/appModule.js"></script>
+    <script src="app/appConfig.js"></script>
+    <script src="app/appRouteConfig.js"></script>
+    <script src="app/directives/dsbTodayDirective.js"></script>
+    <script src="app/directives/dsbWeekDirective.js"></script>
+
+</head>
+<body class="container-fluid">
+    <framework title="My notes"
+               subtitle="Custom schedule">
+        <menu>
+            <!--<menu-item label="Today" icon="fa-dashboard" route="today"></menu-item>-->
+            <menu-item label="Today" icon="fa-location-arrow" route="today"></menu-item>
+            <menu-item label="This week" icon="fa-location-arrow" route="week"></menu-item>
+        </menu>
+    </framework>
+</body>
+</html>

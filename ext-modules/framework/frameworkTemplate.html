@@ -1,0 +1,30 @@
+<div class="template-title-bar">
+    <div class="row">
+        <div class="template-logo-area col-sm-6">
+            <img class="template-icon" ng-src="http://img0.liveinternet.ru/images/attach/c/2//71/626/71626797_53491863.png"/>
+            <div class="template-title-area">
+                <p class="template-logo-title">{{ title }}</p>
+                <p class="template-logo-subtitle">{{ subtitle }}</p>
+            </div>
+            <div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()"
+                 class="collapsed-menu pull-right">
+                <button type="button" class="btn nav-button">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!--<div class="template-right-side-controls col-sm-6">
+            <div>
+                <button class="btn btn-primary">Button1</button>
+                <button class="btn btn-success">Button2</button>
+                <button class="btn btn-warning">Button3</button>
+            </div>
+        </div>-->
+    </div>
+</div>
+<div ng-transclude></div>
+
+<!--<div style="position:absolute; left:220px; top:200px; color:red; font-size: 44px;">{{routeString}}</div>-->
+
+<div ng-view class="view" ng-class="{'view-full-width': !isMenuVertical || isMenuVisible}"></div>

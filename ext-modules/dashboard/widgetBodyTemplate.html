@@ -1,0 +1,15 @@
+<div class="widget-body">
+    <div class="widget-menu-area btn-group">
+
+        <i class="fa fa-2x fa-close close-btn" ng-click="close()" />
+        <form>
+        <input class="to-do-input" type="text" placeholder="To do" ng-model="formTodoText" >
+            <button class="add-btn" ng-click="addTodo()">add</button>
+        </form>
+        <ul >
+            <li class="todos" ng-repeat="todo in todos">
+                <span >{{todo.text}}</span>
+            </li>
+        </ul>
+    </div>
+</div>
